@@ -1,0 +1,135 @@
+@import 'variables';
+
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: $bgColor;
+  font-size: 0.8125rem;
+  overflow-y: scroll !important;
+}
+
+h1 {
+  margin: 0 0 0.8em;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h2 {
+  margin: 0 0 0.7em;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+h3 {
+  margin: 0 0 0.6em;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+h4 {
+  margin: 0 0 0.5em;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+h5 {
+  margin: 0 0 0.4em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+h6 {
+  margin: 0 0 0.3em;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+p {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $linkColorHover;
+    cursor: pointer;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+td {
+  text-overflow: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+a:focus,
+a:visited {
+  color: $linkColor;
+  outline: none;
+}
+
+a:hover,
+a:active,
+a:visited:hover {
+  color: $linkColor;
+  outline: none;
+}
+
+a.disabled,
+a.disabled:hover {
+  color: $buttonDisabledPrimaryColor;
+  cursor: not-allowed;
+}
+
+p {
+  font-size: 13px;
+}
+
+span[type='button'] {
+  -webkit-appearance: initial !important;
+}
+
+div {
+  ::-webkit-scrollbar {
+    position: relative;
+    left: -40px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $scrollBarTrackColor;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $scrollBarThumbColor;
+  }
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=file], /* FF, IE7+, chrome (except button) */
+input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+@import 'variables';
+
+@mixin flexbox($direction: row, $align-items: flex-start, $justify-content: flex-start , $align-content: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  align-content: $align-content;
+}
+
+@mixin fieldWidth($width) {
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+}
+
+.container {
+  width: 100%;
+  min-width: 970px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+
+  .content {
+    min-height: calc(100vh - 185px);
+    position: relative;
+    background: #FFF;
+
+    button {
+      min-width: auto;
+    }
+
+    .topSection {
+      margin-bottom: 10px;
+      position: relative;
+
+      &::before {
+        content: '';
+        height: 0;
+        position: absolute;
+        left: -1.6em;
+        right: -1.6em;
+        bottom: 0;
+        border-bottom: solid 1px #E0E0E0;
+      }
+    }
+
+    .actions {
+      height: 54px;
+      margin: -1em -1.6em 0 -1.6em;
+      padding: 0.8em 1.6em;
+      overflow: hidden;
+      clear: both;
+    }
+  }
+}

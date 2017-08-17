@@ -1,0 +1,73 @@
+
+$primaryColor: #FF9E16;
+$secondaryColor: #3B434F;
+$bgColor: #ECECEC;
+
+$textColor: #3B434F;
+
+$errorColor: #FF5858;
+$warningColor: #FF9E16;
+$infoColor: #3498DB;
+$successColor: #27AE60;
+
+$fontSize: 13px;
+$fontSizeSmall: 12px;
+$fontSizeLarge: 14px;
+$fontFamily: 'Helvetica', Arial, sans-serif;
+
+$containerWidth: 1280px;
+$headerHeight: 55px;
+$dialogPadding: 30px;
+
+$tableHeaderColor: #3B434F;
+$tableHeaderBgColor: #EFEFEF;
+$tableRowHoverColor: #F4F4F4;
+$tableRowHeight: 40px;
+
+/* ===navBar==== */
+$navBarBgColor: #FFF;
+$nabarHover: rgba(59, 67, 79, 0.1);
+
+/* ======Link====== */
+$linkColor: $primaryColor;
+$linkColorHover: $primaryColor;
+
+/* =======button ============ */
+$buttonPrimaryColor: #3A434E;
+$buttonHoverPrimaryColor: #2E3C50;
+$buttonDisabledPrimaryColor: #BABDC1;
+$buttonSecondaryColor: #3B434F;
+$buttonHoverSecondaryColor: 626872;
+$buttonDisabledSecondaryColor: #F2F2F2;
+
+$buttonSize: 13px;
+$buttonHeight: 40px;
+$buttonSizeRegular: 13px;
+$buttonHeightRegular: 32px;
+$buttonSizeSmall: 12px;
+$buttonHeightSmall: 24px;
+
+$buttonLinkColor: $textColor;
+$buttonLinkColorHover: #2E3C50;
+
+$buttonSwitchMode: #E0E0E0;
+$buttonSwitchModeOn: $textColor;
+
+$boxBorderColor: $textColor;
+$boxBorderDisabledColor: transparentize($boxBorderColor, 0.7);
+
+/* ===icon=== */
+$arrowColor: $boxBorderColor;
+$sortIconColor: $boxBorderColor;
+$clearIconColor: $boxBorderColor;
+
+/* ====input, dropdown, checkBox====== */
+$inputBorder: rgba(58, 67, 78, 0.35);
+$inputBorderFocus: rgba(58, 67, 78, 0.65);
+
+/* =======article====== */
+$articleTextColor: transparentize($textColor, 0.35);
+$tableBorder: 1px solid #E0E0E0;
+
+$scrollBarTrackColor: #ECECEC;
+$scrollBarThumbColor: rgba(59, 67, 79, 0.65);
