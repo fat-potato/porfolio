@@ -1,38 +1,30 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import logo from './logo.svg';
-import styles from './styles.scss';
 import { connect } from 'react-redux';
 import appActions from 'containers/App/actions';
+import Section from 'containers/Section';
+import Intro from 'components/Intro';
+import Portfolio from 'components/Portfolio';
 
-import { Switch, Route } from 'react-router-dom';
-import NotFound from 'containers/NotFoundPage';
+import styles from './styles.scss';
 
 class App extends Component {
-  click = () => {
-    this.props.getJobs();
-  }
-
-  create = () => {
-    this.props.createJob('khoi');
-  }
-
   render() {
     return (
-      <div className={styles.App}>
-        <div className={styles.appHeader}>
-          <img src={logo} className={styles.appLogo} alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className={styles.appIntro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={this.click}>get something</button>
-        <button onClick={this.create}>create something</button>
-        <Switch>
-          <Route path="/not-found" component={NotFound} />
-        </Switch>
+      <div>
+        <Section
+          text="Introduction"
+          number="01"
+          component={<Intro />}
+          backgroundImage="https://images.unsplash.com/photo-1490598000245-075175152d25?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+        />
+        <Section
+          text="Portfolio"
+          number="02"
+          component={<Portfolio />}
+          backgroundColor="#ccc"
+        />
       </div>
     );
   }

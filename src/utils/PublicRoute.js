@@ -7,9 +7,7 @@ function PublicRoute({ component: Component, ...rest }) {
     <Route
       {...rest}
       render={props => (
-        <div id="mainContent">
-          <Component {...props} {...rest} />
-        </div>
+        <Component {...props} {...rest} />
       )}
     />
   );

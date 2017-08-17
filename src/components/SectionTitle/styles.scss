@@ -1,0 +1,39 @@
+.title {
+  transform: rotate(-90deg);
+  transform-origin: 25px 0;
+  position: absolute;
+  display: inline-block;
+  padding-right: 190px;
+  height: 100px;
+  box-sizing: border-box;
+  padding-top: 21px;
+  bottom: 20%;
+  left: 120px;
+
+  &::before {
+    content: '';
+    right: 83px;
+    top: 30px;
+    width: 90px;
+    height: 2px;
+    background: red;
+    position: absolute; 
+  }
+
+  .number {
+    line-height: 50px;
+    transform: rotate(90deg);
+    transform-origin: 26px 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  .text {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+}
